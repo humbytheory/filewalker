@@ -5,8 +5,17 @@ I decided to learn/play with Google's [Go](http://golang.org) programming langua
 
 There are plenty of utilities that can report on usage but they all have their own custom GUIs and data repos. I wanted something that would allow more flexibility on how I can store the data, report on it, and display it. The output is to stdout which can then be collected or fed into something like [Splunk](http://www.splunk.com) or [Elasticsearch](http://www.elasticsearch.org) with [Logstash](http://logstash.net) and generate a dashboard reporting whatever details you like.
 
+To Build
+--------
+Make sure you have [Go](http://golang.org) installed then just:
+
+     git clone https://github.com/humbytheory/filewalker
+     cd filewalker
+     go build -o filewalker main.go
+
+
 Usage
-=====
+-----
 
      Usage: ./filewalker  [ OPTION ]...  DIRECTORY
 
@@ -52,7 +61,7 @@ Usage
                        EXAMPLE:             -time RFC3339
 
 Sample Output
-=============
+-------------
 
 Normal output to stdout is:
 
