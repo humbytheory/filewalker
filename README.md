@@ -3,7 +3,7 @@ filewalker
 
 I decided to learn/play with Google's [Go](http://golang.org) programming language. I also wanted to have a nice status board for details about files on my storage. To this end I made this simple utility to walk a given directory and generate a JSON report of it's contents.
 
-There are plenty of utilities that can report on usage but they all have their own custom GUIs and data repos. I wanted something that would allow more flexibility on how I can store the data, report on it, and display it. The output is to STOUT which can then be collected or fed into something like [Splunk](www.splunk.com) or [Elasticsearch](www.elasticsearch.org) with [Logstash](logstash.net) and generate a dashboard reporting whatever details you like.
+There are plenty of utilities that can report on usage but they all have their own custom GUIs and data repos. I wanted something that would allow more flexibility on how I can store the data, report on it, and display it. The output is to stdout which can then be collected or fed into something like [Splunk](www.splunk.com) or [Elasticsearch](www.elasticsearch.org) with [Logstash](logstash.net) and generate a dashboard reporting whatever details you like.
 
 Usage
 =====
@@ -52,7 +52,7 @@ Usage
 Sample Output
 =============
 
-Normal output to STOUT is:
+Normal output to stdout is:
 
      {"ScanDate":"2014-03-24T20:45:35-04:00","Type":"f","Path":"/home/test","Name":"main.go","Extension":".go","Size":9240,"Uid":1000,"Gid":1000,"Inode":8522834,"Mtime":"2014-03-24T20:04:37-04:00","Atime":"2014-03-24T20:25:09-04:00","Ctime":"2014-03-24T20:04:37-04:00"}
 
