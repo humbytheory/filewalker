@@ -8,6 +8,8 @@ There are plenty of utilities that can report on usage but they all have their o
 Usage
 =====
 
+     Usage: ./filewalker-amd64 [ OPTION ]...  DIRECTORY
+
      REQUIRED
              DIRECTORY Target directory to scan
 
